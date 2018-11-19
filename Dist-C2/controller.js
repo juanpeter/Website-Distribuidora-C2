@@ -21,15 +21,10 @@ $(document).ready(function () {
           scrollTop: $(".area4").offset().top-85
         }, 1000)
     })
-    $('.link0').click(function (){
-      $('html, body').animate({
-          scrollTop: $(".home").offset().top-85
-      }, 1000)
-      })
     
     $('.link5').click(function() {
       $('html, body').animate({
-        scrollTop: $(".area1").offset().top-85
+        scrollTop: $(".home").offset().top-85
       }, 1000)
     }), 
 
@@ -40,4 +35,49 @@ $(document).ready(function () {
     });
 /*Fade in hero*/
     $(".hero-text").fadeIn(800) .removeClass('hidden');
+
+
+/*Bootstrap Carroussel multiple*/
+
+$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+  
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var itemsPerSlide = 4;
+  var totalItems = $('.carousel-item').length;
+  
+  if (idx >= totalItems-(itemsPerSlide-1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i=0; i<it; i++) {
+          // append slides to end
+          if (e.direction=="left") {
+              $('.carousel-item').eq(i).appendTo('.carousel-inner');
+          }
+          else {
+              $('.carousel-item').eq(0).appendTo('.carousel-inner');
+          }
+      }
+  }
+});
+
+
+$('#carouselExample').carousel({ 
+              interval: 2500
+      });
+
+
+$(document).ready(function() {
+/* show lightbox when clicking a thumbnail */
+  $('a.thumb').click(function(event){
+    event.preventDefault();
+    var content = $('.modal-body');
+    content.empty();
+      var title = $(this).attr("title");
+      $('.modal-title').html(title);        
+      content.html($(this).html());
+      $(".modal-profile").modal({show:true});
+  });
+
+});
 });
