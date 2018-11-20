@@ -2,6 +2,9 @@
 *{
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+}
+
+body {
     font-size: 16px;
 }
 
@@ -26,17 +29,13 @@ a:hover{
     transition: opacity 0.2s ease-in-out;
 }
 
-i{
-    min-width: 48px;
-    min-height: 48px;
-}
-
 img,embed,object,video{
     max-width: 100%;
 }
 
 main{
     background-color: #FFF;
+    color: #232323
 }
 
 .orange{
@@ -54,6 +53,25 @@ main{
     height: 50px;
 }
 
+.navbar{
+    min-height: 60px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #cccc99;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #b37d36;
+}
+
+.bg-dark {
+    background-color: #000 !important
+}
+
 .navbar-dark
 .navbar-nav
 .active>.nav-link,
@@ -66,36 +84,51 @@ main{
 .navbar-dark
 .navbar-nav
 .show>.nav-link{
-    color: #f3b82e;
+    color: #b37d36;
 }
 
-.navbar{
-    min-height: 60px;
-    display: flex;
-}
-
-.navbar i{
-    padding: 0 5px;
-    font-size: 40px;
-}
-
+/*container*/
 .container-fluid{
     padding-top: 200px;
 }
 
-.product-box{
-    color: #FFF;
-    background-color: #ae8448;
-    height: 300px;
+.area1 img{
+    margin: 0 0 20px 0;
 }
 
+.product-box{
+    color: #000;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: #FFF solid 5px;
+}
+
+.area2 .row .product-box:nth-child(1) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/divisórias.jpg");
+}
+
+.area2 .row .product-box:nth-child(2) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/forro.jpg");
+}
+
+.area2 .row .product-box:nth-child(3) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/piso.jpg");
+}
+
+.area2 .row .product-box:nth-child(4) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/divisórias.jpg");
+}
+/*Talvez tirar
 .product-box:hover{
     z-index: 1;
     cursor: pointer;
     transform: scale(1.1, 1.1);
     transition: transform  0.5s ease-in-out;
 }
-
+*/
 .text-uppercase{
     font-weight: bolder;
 }
@@ -228,12 +261,32 @@ main{
 
 
 /*Footer*/
+#footer{
+    margin:0;
+}
+
+address{
+    margin: 0;
+}
+
+
 footer{
-    color: #FFF;
-    background-color: #343a40;
     width: 100%;
     z-index: 1;
-    padding-top: 20px;
+    margin: 0;
+    padding-top: 20px; 
+}
+
+footer p, footer i,footer img {
+   padding: 5px;
+}
+
+footer .col-6:nth-child(1) {
+    background-color: #b37d36;
+}
+
+footer .col-6:nth-child(2) {
+    background-color: #cccc99;
 }
 
 footer img{
@@ -260,21 +313,10 @@ footer img:hover{
     transform: translateZ(0) scale(1.0, 1.0);
 }
 
-#footer{
-    margin-right: 0;
-    margin-left: 0;
-}
-
 .black-bar{
+    color: #FFF;
     font-size: 10px;
     text-align: right;
     padding: 5px 1.25%;
     margin: 0;
-    background-color: #232323;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-}
-
-.links i{
-    margin: 0 5px;
-}
+    background-color: #000;}
