@@ -6,10 +6,11 @@
 
 body {
     font-size: 16px;
+    background-color: #414a4c;
 }
 
 hr{
-    border: #232323 1px solid;
+    border: #f3b82e 1px solid;
     opacity: 0.6;
     filter: alpha(opacity=60);
 }
@@ -34,8 +35,8 @@ img,embed,object,video{
 }
 
 main{
-    background-color: #FFF;
-    color: #232323
+    color: #fff;
+    padding: 0 2.5% 0 2.5%;
 }
 
 .orange{
@@ -59,17 +60,20 @@ main{
     font-size: 20px;
 }
 
-
 .navbar-dark .navbar-nav .nav-link {
-    color: #cccc99;
+    color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
     color: #b37d36;
 }
 
+.navbar i , .area1 i{
+    color: #b37d36;
+}
+
 .bg-dark {
-    background-color: #000 !important
+    background-color: #0e1111 !important
 }
 
 .navbar-dark
@@ -87,23 +91,18 @@ main{
     color: #b37d36;
 }
 
-/*container*/
-.container-fluid{
-    padding-top: 200px;
-}
-
 .area1 img{
     margin: 0 0 20px 0;
 }
 
 .product-box{
-    color: #000;
-    height: 300px;
+    color: #fff;
+    height: 10em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border: #FFF solid 5px;
+    border: #414a4c solid 5px;
 }
 
 .area2 .row .product-box:nth-child(1) {
@@ -121,6 +120,21 @@ main{
 .area2 .row .product-box:nth-child(4) {
     background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/divisórias.jpg");
 }
+
+.area2 .row .product-box:nth-child(5) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+}
+
+.area2 .row .product-box:nth-child(6) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+}
+
+.area2 .row .product-box:nth-child(7) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+}
+.area2 .row .product-box:nth-child(8) {
+    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+}
 /*Talvez tirar
 .product-box:hover{
     z-index: 1;
@@ -135,8 +149,8 @@ main{
 
 /*Hero*/
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("https://via.placeholder.com/960C/O https://placeholder.com/");
-    height: 45em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("imgs/FOTO\ CAPA.jpg");
+    height: 30em;
     margin: 5% 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,34 +279,34 @@ main{
     margin:0;
 }
 
-address{
-    margin: 0;
-}
-
-
 footer{
     width: 100%;
     z-index: 1;
     margin: 0;
-    padding-top: 20px; 
+    padding-top: 20px;
+    color: #FFF;
+    background-color: #232b2b;
 }
 
-footer p, footer i,footer img {
-   padding: 5px;
+.fa-map-marker-alt{
+    font-size: 3em;
+    margin: 0 0 20px 0;
 }
 
-footer .col-6:nth-child(1) {
-    background-color: #b37d36;
+footer i {
+    color: #b37d36;
 }
 
-footer .col-6:nth-child(2) {
-    background-color: #cccc99;
+.black-bar{
+    color: #FFF;
+    margin: 20px 0 0 0;
+    padding: 5px 1.5%;
+    background-color: #353839;
 }
 
 footer img{
     width: 150px;
     float: right;
-    margin: 0 0 20px 0;
     opacity: 0.6;
     filter: alpha(opacity=60);
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
@@ -313,10 +327,7 @@ footer img:hover{
     transform: translateZ(0) scale(1.0, 1.0);
 }
 
-.black-bar{
-    color: #FFF;
-    font-size: 10px;
-    text-align: right;
-    padding: 5px 1.25%;
-    margin: 0;
-    background-color: #000;}
+/*Maps*/
+#map {
+    height: 18em;  /* The height is 400 pixels */
+}

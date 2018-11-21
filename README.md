@@ -32,6 +32,15 @@ O site necessitára de apresentar aos seus usuários as seguintes informações:
 ### Carrossel Bootstrap 4
 - [https://bootsnipp.com/snippets/dl6ez](https://bootsnipp.com/snippets/dl6ez);
 
+### Google Maps API
+- [https://cloud.google.com/maps-platform/?hl=pt-BR](https://cloud.google.com/maps-platform/?hl=pt-BR);
+
+### FontAwesome 5.5
+-[https://fontawesome.com/](https://fontawesome.com/);
+
+## Paleta de Cores
+
+-[https://www.color-hex.com/color-palette/1405](https://www.color-hex.com/color-palette/1405);
 
 ## Problemas / to-do
 
@@ -39,3 +48,4 @@ O site necessitára de apresentar aos seus usuários as seguintes informações:
 - Adicionar srcsets, pras imagens responderem melhor a diversas telas;
 - Ver se estão usando modals ou não no carrossel;
 - Colocar Google Analytics e Google maps no site;
+- Colocar link para contato no whatsapp;
