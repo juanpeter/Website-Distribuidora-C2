@@ -57,14 +57,12 @@
 <!--Hero-->
 <section class="home hero">
     <div class="hero-text">
-        <h1>Seja bem-vindo</h1>
-        <br>
-        <button class="rounded link5">Conheça-nos</button>
+        <button class="rounded link1">Conheça-nos</button>
       </div>
 </section>
 
 <main>
-    <div class="container-fluid">
+    <div class="container-fluid white-box">
     <hr>
     <section class="area1">
         <div class="row">
@@ -126,18 +124,38 @@
     </section>
     <hr>
 
-    <section class=" area3">
+    <section class="area3">
         <div class="row">
         <h1 class=" text-uppercase col-md-12">Parceiros</h1>
         </div>
-    <!--Bootstrap Carroussel parceiros-->
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <img class="img-fluid" src="imgs/eucatex.png" alt="Logo e link da empresa Eucatex">
+            </div>
+            <div class="col-md-3 col-6">
+                <a href="https://www.trademixx.com.br/" target="blank">
+                    <img class="img-fluid" src="imgs/armstrong.jpg" alt="Logo e link da empresa Armstrong">
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+                <a href="https://www.trademixx.com.br/" target="blank">
+                    <img class="img-fluid" src="imgs/trademixx.png" alt="Logo e link da empresa Trademixx">
+                </a>
+            </div>
+            <div class="col-md-3 col-6">
+                <a href="http://www.persianasreal.com.br/index.php?opcao=empresa" target="blank">
+                    <img class="img-fluid" src="imgs/real-persianas.png" alt="Logo e link da empresa Real Persianas">
+                </a>
+            </div>
+        </div>
+    <!--Bootstrap Carroussel parceiros
     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <div class="carousel-item col-md-3  active">
                    <div class="panel panel-default">
                       <div class="panel-thumbnail">
                         <a href="#" title="image 1" class="thumb">
-                          <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 1">
+                          <img class="img-fluid mx-auto d-block" src="imgs/eucatex.png" alt="slide 1">
                         </a>
                       </div>
                     </div>
@@ -146,7 +164,7 @@
                    <div class="panel panel-default">
                       <div class="panel-thumbnail">
                         <a href="#" title="image 3" class="thumb">
-                         <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 2">
+                         <img class="img-fluid mx-auto d-block" src="imgs/armstrong.jpg" alt="slide 2">
                         </a>
                       </div>
                     </div>
@@ -155,7 +173,7 @@
                    <div class="panel panel-default">
                       <div class="panel-thumbnail">
                         <a href="#" title="image 4" class="thumb">
-                         <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 3">
+                         <img class="img-fluid mx-auto d-block" src="imgs/trademixx.png" alt="slide 3">
                         </a>
                       </div>
                     </div>
@@ -164,46 +182,9 @@
                     <div class="panel panel-default">
                       <div class="panel-thumbnail">
                         <a href="#" title="image 5" class="thumb">
-                         <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 4">
+                         <img class="img-fluid mx-auto d-block" src="imgs/real-persianas.png" alt="slide 4">
                         </a>
                       </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-3 ">
-                  <div class="panel panel-default">
-                      <div class="panel-thumbnail">
-                        <a href="#" title="image 6" class="thumb">
-                          <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 5">
-                        </a>
-                      </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-3 ">
-                   <div class="panel panel-default">
-                      <div class="panel-thumbnail">
-                        <a href="#" title="image 7" class="thumb">
-                          <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 6">
-                        </a>
-                      </div>
-                    </div>
-                </div>
-                <div class="carousel-item col-md-3 ">
-                   <div class="panel panel-default">
-                      <div class="panel-thumbnail">
-                        <a href="#" title="image 8" class="thumb">
-                          <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 7">
-                        </a>
-                      </div>
-                    </div>
-                </div>
-                 <div class="carousel-item col-md-3  ">
-                    <div class="panel panel-default">
-                      <div class="panel-thumbnail">
-                        <a href="#" title="image 2" class="thumb">
-                         <img class="img-fluid mx-auto d-block" src="https://via.placeholder.com/400.png" alt="slide 8">
-                        </a>
-                      </div>
-                      
                     </div>
                 </div>
             </div>
@@ -215,7 +196,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div>-->
 
     </section>
 
@@ -248,7 +229,7 @@
                 function initMap() {
                     var C2 = {lat: -7.063577, lng: -34.850108};
                     var map = new google.maps.Map(
-                        document.getElementById('map'), {zoom: 12, center: C2});
+                        document.getElementById('map'), {zoom: 15, center: C2});
                     var marker = new google.maps.Marker({position: C2, map: map});
                 }
             </script>

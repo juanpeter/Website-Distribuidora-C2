@@ -49,3 +49,4 @@ O site necessitára de apresentar aos seus usuários as seguintes informações:
 - Ver se estão usando modals ou não no carrossel;
 - Colocar Google Analytics e Google maps no site;
 - Colocar link para contato no whatsapp;
+- Alterar forma de mostrar os produtos (exemplo aqui: [https://www.olimpogesso.com.br/](https://www.olimpogesso.com.br/)

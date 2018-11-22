@@ -6,13 +6,11 @@
 
 body {
     font-size: 16px;
-    background-color: #414a4c;
+    background-color: #cec19f;
 }
 
 hr{
-    border: #f3b82e 1px solid;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    border: #ae8448 1px solid;
 }
 
 a{
@@ -35,7 +33,7 @@ img,embed,object,video{
 }
 
 main{
-    color: #fff;
+    color: #0e1111;
     padding: 0 2.5% 0 2.5%;
 }
 
@@ -96,44 +94,44 @@ main{
 }
 
 .product-box{
-    color: #fff;
+    color: #000;
     height: 10em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    border: #414a4c solid 5px;
+    border: #cec19f solid 5px;
 }
 
 .area2 .row .product-box:nth-child(1) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/divisórias.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/divisórias.jpg");
 }
 
 .area2 .row .product-box:nth-child(2) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/forro.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/forro.jpg");
 }
 
 .area2 .row .product-box:nth-child(3) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/piso.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/piso.jpg");
 }
 
 .area2 .row .product-box:nth-child(4) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/divisórias.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/drywall.jpg");
 }
 
 .area2 .row .product-box:nth-child(5) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/portas.jpg");
 }
 
 .area2 .row .product-box:nth-child(6) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/persiana.jpg");
 }
 
 .area2 .row .product-box:nth-child(7) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/persiana.jpg");
 }
 .area2 .row .product-box:nth-child(8) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.3), rgba(174, 132, 72, 0.3)),  url("imgs/persiana.jpg");
+    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/persiana.jpg");
 }
 /*Talvez tirar
 .product-box:hover{
@@ -143,13 +141,32 @@ main{
     transition: transform  0.5s ease-in-out;
 }
 */
+
+.area3 img{
+    border: #000 solid 3px;
+    border-radius: 4px;
+    margin: 5px;
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+}
+
+.area3 img:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: filter 0.4s ease-in-out;
+    -moz-transition: filter 0.4s ease-in-out;
+    -ms-transition: filter 0.4s ease-in-out;
+    -o-transition: filter 0.4s ease-in-out;
+    transition: filter 0.4s ease-in-out;
+}
+
 .text-uppercase{
     font-weight: bolder;
 }
 
 /*Hero*/
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("imgs/FOTO\ CAPA.jpg");
+    background-image: url("imgs/FOTO\ CAPA.jpg");
     height: 30em;
     margin: 5% 0;
     background-position: center;
@@ -164,7 +181,7 @@ main{
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #000;
     font-size: 1em;
 }
 
@@ -176,8 +193,8 @@ main{
 
 .hero-text button{
     background-color: Transparent;
-    border: 2px solid #FFF;
-    color: #FFF;
+    border: 2px solid #000;
+    color: #000;
     height: 4em;
     width: 8em;
     cursor: pointer;
@@ -331,3 +348,16 @@ footer img:hover{
 #map {
     height: 18em;  /* The height is 400 pixels */
 }
+
+/*
+.white-box{
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+}*/
+
+/*cores da logomarca:
+#cec19f;
+#ae8448;
+*/
