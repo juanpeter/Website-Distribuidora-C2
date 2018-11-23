@@ -1,6 +1,5 @@
-/*Global Attributes!-*/
 *{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
@@ -93,80 +92,37 @@ main{
     margin: 0 0 20px 0;
 }
 
-.product-box{
-    color: #000;
-    height: 10em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border: #cec19f solid 5px;
+.area3 img {
+    border: #000 solid 3px;
+    border-radius: 4px;
+    margin: 5px;
 }
 
-.area2 .row .product-box:nth-child(1) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/divisórias.jpg");
-}
-
-.area2 .row .product-box:nth-child(2) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/forro.jpg");
-}
-
-.area2 .row .product-box:nth-child(3) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/piso.jpg");
-}
-
-.area2 .row .product-box:nth-child(4) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/drywall.jpg");
-}
-
-.area2 .row .product-box:nth-child(5) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/portas.jpg");
-}
-
-.area2 .row .product-box:nth-child(6) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/persiana.jpg");
-}
-
-.area2 .row .product-box:nth-child(7) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/persiana.jpg");
-}
-.area2 .row .product-box:nth-child(8) {
-    background-image: linear-gradient(rgba(174, 132, 72, 0.2), rgba(174, 132, 72, 0.2)),  url("imgs/persiana.jpg");
-}
-/*Talvez tirar
-.product-box:hover{
+.area3 img:hover {
     z-index: 1;
     cursor: pointer;
     transform: scale(1.1, 1.1);
     transition: transform  0.5s ease-in-out;
-}
-*/
-
-.area3 img{
-    border: #000 solid 3px;
-    border-radius: 4px;
-    margin: 5px;
-    -webkit-filter: grayscale(0.8);
-    filter: grayscale(0.8);
-}
-
-.area3 img:hover{
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-    -webkit-transition: filter 0.4s ease-in-out;
-    -moz-transition: filter 0.4s ease-in-out;
-    -ms-transition: filter 0.4s ease-in-out;
-    -o-transition: filter 0.4s ease-in-out;
-    transition: filter 0.4s ease-in-out;
 }
 
 .text-uppercase{
     font-weight: bolder;
 }
 
+.area2 img{
+    filter: brightness(0.6);
+}
+
+.area2 img:hover{
+    filter: brightness(0.7);
+    -webkit-transform: translateZ(0) scale(1.2, 1.2);
+    transform: translateZ(0) scale(1.2, 1.2);
+    transition: filter, transform 0.4s ease-in-out;
+}
+
 /*Hero*/
 .hero{
-    background-image: url("imgs/FOTO\ CAPA.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/FOTO\ CAPA.jpg");
     height: 30em;
     margin: 5% 0;
     background-position: center;
@@ -181,7 +137,7 @@ main{
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000;
+    color: #fff;
     font-size: 1em;
 }
 
@@ -193,10 +149,10 @@ main{
 
 .hero-text button{
     background-color: Transparent;
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid #fff;
+    color: #fff;
     height: 4em;
-    width: 8em;
+    width: 9em;
     cursor: pointer;
 }
 
@@ -208,6 +164,20 @@ main{
     -ms-transition: background-color 0.4s ease-in-out;
     -o-transition: background-color 0.4s ease-in-out;
     transition: background-color 0.4s ease-in-out;
+}
+/*To-do: Ajeitar animações do botão*/
+.hero-text button i:hover{
+    animation-name: arrows;
+    animation-duration: 2s;
+}
+
+@keyframes arrows {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90);
+    }
 }
 
 /*Bootstrap carrousel muliple itens*/
@@ -346,16 +316,8 @@ footer img:hover{
 
 /*Maps*/
 #map {
-    height: 18em;  /* The height is 400 pixels */
+    height: 18em;
 }
-
-/*
-.white-box{
-    background-color: #fff;
-    color: #000;
-    border-radius: 4px 4px 0 0;
-    padding: 10px;
-}*/
 
 /*cores da logomarca:
 #cec19f;

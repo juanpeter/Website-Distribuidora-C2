@@ -63,7 +63,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
 
 
 $('#carouselExample').carousel({ 
-              interval: 2500
+              interval: 3000
       });
 
 
