@@ -142,7 +142,7 @@ main{
 }
 
 @media screen and (max-width:660px){
-    .hero-text{
+    .hero-text button{
         top: 50%;
     }
 }
@@ -165,6 +165,7 @@ main{
     -o-transition: background-color 0.4s ease-in-out;
     transition: background-color 0.4s ease-in-out;
 }
+
 /*To-do: Ajeitar animações do botão*/
 .hero-text button i:hover{
     animation-name: arrows;
