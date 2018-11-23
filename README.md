@@ -44,9 +44,7 @@ O site necessitára de apresentar aos seus usuários as seguintes informações:
 
 ## Problemas / to-do
 
-- Dar um higlight na seção de menu, itens podem não parecer clicáveis;
-- Adicionar srcsets, pras imagens responderem melhor a diversas telas;
+- Dar um higlight na seção de menu, itens podem não parecer clicáveis; 
 - Ver se estão usando modals ou não no carrossel;
 - Colocar Google Analytics e Google maps no site;
 - Colocar link para contato no whatsapp;
-- Alterar forma de mostrar os produtos (exemplo aqui: [https://www.olimpogesso.com.br/](https://www.olimpogesso.com.br/)
