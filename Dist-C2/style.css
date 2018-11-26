@@ -27,13 +27,8 @@ a:hover{
     transition: opacity 0.2s ease-in-out;
 }
 
-img,embed,object,video{
-    max-width: 100%;
-}
-
 main{
     color: #0e1111;
-    padding: 0 2.5% 0 2.5%;
 }
 
 .orange{
@@ -54,7 +49,7 @@ main{
 .navbar{
     min-height: 60px;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -92,17 +87,16 @@ main{
     margin: 0 0 20px 0;
 }
 
-.area3 img {
-    border: #000 solid 3px;
-    border-radius: 4px;
-    margin: 5px;
+.area3 img:hover {
+    filter: grayscale(0);
+    -webkit-transform: translateZ(0) scale(1.2, 1.2);
+    transform: translateZ(0) scale(1.2, 1.2);
+    transition: filter, transform 0.75s ease-in-out;
 }
 
-.area3 img:hover {
-    z-index: 1;
-    cursor: pointer;
-    transform: scale(1.1, 1.1);
-    transition: transform  0.5s ease-in-out;
+.area3 .col-md-3 {
+    padding: 5px;
+
 }
 
 .text-uppercase{
@@ -115,16 +109,15 @@ main{
 
 .area2 img:hover{
     filter: brightness(0.7);
-    -webkit-transform: translateZ(0) scale(1.2, 1.2);
-    transform: translateZ(0) scale(1.2, 1.2);
+    -webkit-transform: translateZ(0) scale(1.1, 1.1);
+    transform: translateZ(0) scale(1.1, 1.1);
     transition: filter, transform 0.4s ease-in-out;
 }
 
 /*Hero*/
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imgs/FOTO\ CAPA.jpg");
-    height: 30em;
-    margin: 5% 0;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,21 +157,6 @@ main{
     -ms-transition: background-color 0.4s ease-in-out;
     -o-transition: background-color 0.4s ease-in-out;
     transition: background-color 0.4s ease-in-out;
-}
-
-/*To-do: Ajeitar animações do botão*/
-.hero-text button i:hover{
-    animation-name: arrows;
-    animation-duration: 2s;
-}
-
-@keyframes arrows {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(90);
-    }
 }
 
 /*Bootstrap carrousel muliple itens*/
@@ -273,7 +251,7 @@ footer{
     margin: 0;
     padding-top: 20px;
     color: #FFF;
-    background-color: #232b2b;
+    background-color: #0e1111;
 }
 
 .fa-map-marker-alt{
@@ -289,7 +267,7 @@ footer i {
     color: #FFF;
     margin: 20px 0 0 0;
     padding: 5px 1.5%;
-    background-color: #353839;
+    background-color: #232b2b;;
 }
 
 footer img{
@@ -319,8 +297,3 @@ footer img:hover{
 #map {
     height: 18em;
 }
-
-/*cores da logomarca:
-#cec19f;
-#ae8448;
-*/

@@ -33,9 +33,12 @@ $(document).ready(function () {
       $(".nav-item").removeClass("active");
       $(this).addClass("active");
     });
-/*Fade in hero*/
-    $(".hero-text").fadeIn(800) .removeClass('hidden');
-
+/*Pausar Carrossel quando em hover*/
+$('.carousel-item').hover(function(){
+  $("#carousel-example").carousel('pause');
+},function(){
+  $("#carousel-example").carousel('cycle');
+});
 
 /*Bootstrap Carroussel multiple*/
 
