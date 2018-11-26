@@ -44,7 +44,6 @@ O site necessitára de apresentar aos seus usuários as seguintes informações:
 
 ## Problemas / to-do
 
-- Dar um higlight na seção de menu, itens podem não parecer clicáveis; 
-- Ver se estão usando modals ou não no carrossel;
-- Colocar Google Analytics e Google maps no site;
+- h3 dos carroseis não ativam "hover" na imagem;
+- Colocar Google Analytics (x) e Google maps no site;
 - Colocar link para contato no whatsapp;
