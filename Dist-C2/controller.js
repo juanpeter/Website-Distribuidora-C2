@@ -32,7 +32,8 @@ $(document).ready(function () {
     $(document).on('click', '.nav-item', function() {
       $(".nav-item").removeClass("active");
       $(this).addClass("active");
-    });
+});
+
 /*Pausar Carrossel quando em hover*/
 $('.carousel-item').hover(function(){
   $("#carousel-example").carousel('pause');
@@ -44,7 +45,6 @@ $('.carousel-item').hover(function(){
 
 $('#carouselExample').on('slide.bs.carousel', function (e) {
 
-  
   var $e = $(e.relatedTarget);
   var idx = $e.index();
   var itemsPerSlide = 4;
@@ -63,24 +63,20 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
       }
   }
 });
-
-
-$('#carouselExample').carousel({ 
-              interval: 3000
-      });
-
-
-$(document).ready(function() {
-/* show lightbox when clicking a thumbnail */
-  $('a.thumb').click(function(event){
-    event.preventDefault();
-    var content = $('.modal-body');
-    content.empty();
-      var title = $(this).attr("title");
-      $('.modal-title').html(title);        
-      content.html($(this).html());
-      $(".modal-profile").modal({show:true});
-  });
+//Fade in on scroll 
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  var os = $('.home.hero').offset().top;
+  var ht = $('.home.hero').height();
+  var font = 200;
+  if(scroll > os + ht - font){
+      $('#quem-somos').addClass('fade-right');
+  }
 
 });
+
+$('#carouselExample').carousel({ 
+  interval: 3000
+});
+
 });
