@@ -43,7 +43,3 @@ O site necessitára de apresentar aos seus usuários as seguintes informações:
 -[https://www.color-hex.com/color-palette/1405](https://www.color-hex.com/color-palette/1405);
 
 ## Problemas / to-do
-
-- h3 dos carroseis não ativam "hover" na imagem;
-- Colocar Google Analytics (x) e Google maps no site;
-- Colocar link para contato no whatsapp;
