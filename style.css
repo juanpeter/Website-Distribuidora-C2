@@ -1,0 +1,139 @@
+body{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+p {
+    font-weight: 300;
+}
+h1,h2,h3,h4,h5 {
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+a:hover {
+    text-decoration: none;
+}
+nav{
+    background-color: #CFC2A0;
+    position: absolute;
+    height: 80px;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: inherit;
+}
+nav ul li a:hover{
+    color: inherit;
+}
+h2 span{
+    border-bottom: 4px #fff solid;
+    margin-bottom: 2em;
+}
+h2 {
+    padding-bottom: 1em;
+}
+.white-btn {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+.white-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+.page1, .page2, .page3, .page4 {
+    padding-top: 96px;
+}
+.pageRow {
+    display: block;
+    width: 100%;
+    height: calc(80vh - 96px);
+    display: flex;
+    align-items: center;
+}
+.pageBottom {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.page1 {
+    background: linear-gradient(148.73deg, rgba(0, 0, 0, 0) 7.55%, rgba(0, 0, 0, 0.49) 92.71%), url("imgs/backgrounds/background-example.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position-y: 80px;
+}
+.quality-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 24px;
+    color: #283035;
+}
+.quality-list li {
+    background-color: #CC9355;
+    display: flex;
+    width: 60vw;
+    align-items: center;
+    margin-bottom: 16px;
+    position: relative;
+    left: -70vw;
+}
+@media screen and (max-width: 468px){
+    .quality-list li {
+        width: 90vw;
+    }
+}
+.quality-list li b {
+    font-size: 2em;
+    margin: 0 0.5em;
+}
+.quality-list li p {
+    margin-bottom: 0;
+    letter-spacing: 0.25em;
+    font-weight: bold;
+}
+.page1 a .white-btn {
+    min-width: 280px;
+    font-size: 1.25em;
+}
+.page1 svg{
+    fill: #fff;
+}
+.page2{
+    background-color: #283035;
+}
+/* .page2 img{
+    max-height: 400px;
+    padding-bottom: 1em;
+    display: flex;
+} */
+.page3{
+    background-color: #CC9355;
+}
+.page3 img {
+    height: 320px;
+    padding: 32px; 
+}
+.page4{
+    color: #000;
+}
+.page4 h2 span{
+    border-bottom: 4px #000 solid;
+    margin-bottom: 2em;
+}
