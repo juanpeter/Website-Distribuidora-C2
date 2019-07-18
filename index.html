@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>C2 Soluções Construtivas</title>
-    <!-- Tá feio, ajeitar -->
     <link rel="shortcut icon" href="imgs/favicon.png">
-    <link rel="stylesheet" href="viewscroller/viewScroller.css">
+    <!-- Adicionar descrição -->
+    <meta name="description" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,16 +15,26 @@
     <body>
         <nav>
             <a href="#firstview"> <img src="imgs/c2logo.png" alt="Logo C2"></a>
-            <ul>
-                <li> <a href="#firstview">Home</a></li>
-                <li> <a href="#secondview">Quem somos</a></li>
-                <li> <a href="#">Produtos</a></li>
-                <li> <a href="#">Fornecedores</a></li>
-                <li> <a href="#">Contato</a></li>
+            <ul class="desktopNav">
+                <li> <a class="active" href="#page1">Home</a></li>
+                <li> <a href="#page2">Quem Somos</a></li>
+                <li> <a href="#page3">Nossos Valores</a></li>
+                <li> <a href="#page4">Produtos</a></li>
+                <li> <a href="#page5">Fornecedores e Atas</a></li>
+                <li> <a href="#page6">Contato</a></li>
             </ul>
+            <ul class="mobileNav">
+                <li> <a href="#page1">Home</a></li>
+                <li> <a href="#page2">Quem Somos</a></li>
+                <li> <a href="#page3">Nossos Valores</a></li>
+                <li> <a href="#page4">Produtos</a></li>
+                <li> <a href="#page5">Fornecedores e Atas</a></li>
+                <li> <a href="#page6">Contato</a></li>
+            </ul>
+            <img id="menu" src="imgs/icons/menu.svg" alt="Abrir menu">
         </nav>
-        <div class="mainbag">
-            <div vs-anchor="firstview" class="mainview page1">
+        <div class="container-fluid" id="page1">
+            <div class="row">
                 <div class="pageRow">
                     <ul class="quality-list">
                         <li>
@@ -42,75 +52,205 @@
                     </ul>
                 </div>
                 <div class="pageBottom">
-                    <a href="#secondview"><button class="white-btn">CONHEÇA A NOVA C2</button></a>
+                    <a href="#page2"><button class="white-btn">CONHEÇA A NOVA C2</button></a>
                 </div>
                 <div class="pageBottom">
-                    <a href="#secondview">
+                    <a href="#page2">
                         <svg x="0px" y="0px" width="100%" height="48px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
                             <g><g id="expand-more"><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
                         </svg>
                     </a>
                 </div>
             </div>
-            <div vs-anchor="secondview" class="mainview page2">
-                <div class="container">
-                    <h2><span>QUEM SOMOS</span></h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="imgs/pictures/fotofachada.png" class="img-fluid" alt="Fachada da C2">
-                        </div>
-                        <div class="col-md-6">
-                            <p>No mercado desde 2009, a C2 é uma empresa especializada no ramo de licitações públicas. Atualmente, agregando aos seus serviços a distribuição de produtos para revestimentos de ambientes públicos e privados.</p>
-                            <p>Buscamos atender todas as necessidades de nossos clientes, desde a elaboração do projeto até a sua venda e instalação final. Seja muito bem vindo!</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="container-fluid" id="page2">
+            <h2><span>QUEM SOMOS</span></h2>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="imgs/pictures/fotofachada.png" class="img-fluid" alt="Fachada da C2">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p>No mercado desde 2009, a C2 é uma empresa especializada no ramo de licitações públicas. Atualmente, agregando aos seus serviços a distribuição de produtos para revestimentos de ambientes públicos e privados.
+                        <br><br>
+                        Buscamos atender todas as necessidades de nossos clientes, desde a elaboração do projeto até a sua venda e instalação final. Seja muito bem vindo!</p>
                 </div>
             </div>
-            <div vs-anchor="thirdview" class="mainview page3">
-                <div class="container">
-                        <h2><span>NOSSOS VALORES</span></h2>
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <img src="imgs/icons/shopping-list.svg" alt="Missão">
-                            <h3>Missão</h3>
-                            <p>Atuar no mercado de forma ética, com preços competitivos e atender todo o Estado com pontualidade e satisfação.</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <img src="imgs/icons/lighthouse.svg" alt="Visão">
-                            <h3>Visão</h3>
-                            <p>Ser a maior distribuidora de produtos especializados em revestimento e acabamentos para área pública, privada e corporativa do Estado da Paraíba</p>
-                        </div>
-                    </div>
+            <div class="pageBottom">
+                <a href="#page3">
+                    <svg x="0px" y="0px" width="100%" height="48px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g><g id="expand-more"><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="page3">
+                <h2><span>NOSSOS VALORES</span></h2>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="imgs/icons/shopping-list.svg" alt="Missão">
+                    <h3>Missão</h3>
+                    <p>Atuar no mercado de forma ética, com preços competitivos e atender todo o Estado com pontualidade e satisfação.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="imgs/icons/lighthouse.svg" alt="Visão">
+                    <h3>Visão</h3>
+                    <p>Ser a maior distribuidora de produtos especializados em revestimento e acabamentos para área pública, privada e corporativa do Estado da Paraíba</p>
                 </div>
             </div>
-            <div vs-anchor="fourthview" class="mainview page4">
-                <div class="container">
-                        <h2><span>PRODUTOS</span></h2>
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <h3>Missão</h3>
-                            <p>Atuar no mercado de forma ética, com preços competitivos e atender todo o Estado com pontualidade e satisfação.</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <h3>Visão</h3>
-                            <p>Ser a maior distribuidora de produtos especializados em revestimento e acabamentos para área pública, privada e corporativa do Estado da Paraíba</p>
-                        </div>
-                    </div>
+            <div class="pageBottom">
+                <a href="#page4">
+                    <svg x="0px" y="0px" width="100%" height="48px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g><g id="expand-more"><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="page4">
+                <h2><span>PRODUTOS</span></h2>
+            <div class="row">
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/produtos/drywall.png" alt="">
                 </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/produtos/divisórias.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/produtos/forro.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/produtos/persiana.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/produtos/portas.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/produtos/piso.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-6 col-6">
+                    <img src="imgs/produtos/rodape.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-6 col-6">
+                    <img src="imgs/produtos/painelWall.png" alt="">
+                </div>
+            </div>
+            <div class="pageBottom">
+                <a href="#page5">
+                    <svg x="0px" y="0px" width="100%" height="48px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g><g id="expand-more"><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="page5">
+            <h2><span>FORNECEDORES</span></h2>
+            <div class="row">
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/fornecedores/armstrong.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/fornecedores/belgotex.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/fornecedores/columbia.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/fornecedores/decorlit.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/fornecedores/eucatex.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-4 col-6">
+                    <img src="imgs/fornecedores/placo.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-6 col-6">
+                    <img src="imgs/fornecedores/santa_luzia.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-lg-3 col-md-6 col-6">
+                    <img src="imgs/fornecedores/trademixx.png" alt="">
+                </div>
+            </div>
+            <h2><span>ATAS</span></h2>
+            <div class="row">
+                <div class="d-flex justify-content-center col-md-3 col-6">
+                    <img src="imgs/fornecedores/armstrong.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-md-3 col-6">
+                    <img src="imgs/fornecedores/belgotex.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-md-3 col-6">
+                    <img src="imgs/fornecedores/columbia.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center col-md-3 col-6">
+                    <img src="imgs/fornecedores/decorlit.png" alt="">
+                </div>
+            </div>
+            <div class="pageBottom">
+                <a href="#page6">
+                    <svg x="0px" y="0px" width="100%" height="48px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g><g id="expand-more"><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="page6">
+            <h2><span>CONTATO</span></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href=""><h3>(83) 4141-3320 / (83) 99997-0054</h3></a>
+                    <a href=""><h4>contato@c2comercio.com</h4></a>
+                    <p>Rua das Mangueiras, 16, Amazonia Park, Cabedelo - PB</p>
+                    <p>CEP: 58106-542</p>
+                    <!-- problem with height -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.651100024015!2d-34.852424299093954!3d-7.050221171020311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acddee3822f65f%3A0x8229381205eeaea!2sC2+-+Solu%C3%A7%C3%B5es+Construtivas!5e0!3m2!1sen!2sbr!4v1563392649927!5m2!1sen!2sbr" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form method="post" action="php/sendMail.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nome" placeholder="Nome*" required oninvalid="this.setCustomValidity('Por favor preencha o campo!')">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="clientEmail" placeholder="E-mail*" required oninvalid="this.setCustomValidity('Por favor preencha o campo!')">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="telefone" placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="selecao">
+                                <option value="#" selected disabled>Produto interessado:</option>
+                                <option value="Pinheiro">Pinheiro</option>
+                                <option value="Cedro">Cedro</option>
+                                <option value="Ipê">Ipê</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="blue-button-alt float-md-right" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div class="pageBottom">
+                <a href="#page1">
+                    <svg x="0px" y="0px" width="100%" height="48px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                        <g><g id="expand-more"><polygon points="270.3,58.65 153,175.95 35.7,58.65 0,94.35 153,247.35 306,94.35"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                    </svg>
+                </a>
             </div>
         </div>
         <!-- <footer>
             <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/eleonor-wang" title="Eleonor Wang">Eleonor Wang</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </footer> -->
-
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="viewscroller/jquery.easing.min.js"></script>
-    <script src="viewscroller/jquery.mousewheel.min.js"></script>
-    <script src="viewscroller/viewScroller.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jquery.scrollify.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        $(function() {
+            $.scrollify({
+            section : "#page1, #page2, #page3,, #page4, #page5, #page6",
+            });
+        });
+        </script>
 </html>
