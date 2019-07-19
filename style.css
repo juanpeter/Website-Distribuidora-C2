@@ -4,6 +4,7 @@ html{
 body{
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     overflow-x: hidden;
     background-color: #CFC2A0;
     /* Kinda solves the problem, but no scrolling */
@@ -28,7 +29,7 @@ svg{
 nav{
     background-color: #CFC2A0;
     position: fixed;
-    height: 80px;
+    height: 60px;
     width: 100vw;
     top: 0;
     z-index: 100;
@@ -36,9 +37,9 @@ nav{
     display: flex;
     align-items: center;
 }
-nav ul li a.active{
+nav ul li.active{
     background-color: #CC9355;
-    padding: 16px;
+    padding: 12px;
     border-radius: 5px;
 }
 nav ul{
@@ -53,14 +54,14 @@ nav ul{
 }
 .mobileNav{
     display: none;
-    position: relative;
-    top: calc(44vh + 96px);
-    left: 100px;
+    position: absolute;
+    top: 60px;
+    right: -60vw;
     height: 100vh;
-    width: 90vw;
+    width: 60vw;
     background-color: #CFC2A0;
-    padding-left: 32px;
-    font-size: 32px;
+    padding: 16px;
+    font-size: 24px;
     font-weight: 600;
 }
 @media screen and (max-width: 840px){
@@ -78,22 +79,35 @@ nav ul li a:hover{
     color: inherit;
 }
 nav img{
-    height: 60px;
+    height: 40px;
 }
 nav img:hover{
     cursor: pointer;
 }
 #menu{
     display: none;
+    margin-left: auto;
+    padding-right: 16px;
+    z-index: 4;
 }
 @media screen and (max-width: 840px){
     #menu{
         display: block;
     }
 }
+.overlay{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.49);
+    position: fixed;
+    z-index: 3;
+    top: 60px;
+    width: 100vw;
+    display: none;
+}
 h2 span{
     border-bottom: 4px #fff solid;
     margin-bottom: 2em;
+    line-height: 2em;
 }
 @media screen and (max-width: 768px){
     h2 span{
@@ -114,32 +128,33 @@ h2 {
     color: #000;
     transition: 0.5s;
 }
-.container-fluid {
-    height: 100vh;
+.container {
+    min-height: 100vh;
+    height: 100%;
 }
 #page2, #page3, #page4, #page5, #page6 {
-    padding-top: 96px;
+    padding-top: 60px;
 }
 .pageRow {
     display: block;
     width: 100%;
-    height: calc(80vh - 96px);
+    height: calc(80vh - 60px);
     display: flex;
     align-items: center;
 }
 .pageBottom {
     padding: 2em 0;
     width: 100%;
-    height: 10vh;
+    height: calc(10vh + 30px);
     display: flex;
     justify-content: center;
 }
 #page1 {
-    padding-top: 96px;
+    padding-top: 60px;
     background: linear-gradient(148.73deg, rgba(0, 0, 0, 0) 7.55%, rgba(0, 0, 0, 0.49) 92.71%), url("imgs/backgrounds/background-example.jpg");
     background-size: cover;
     background-repeat: none;
-    background-position-y: 80px;
+    background-position-y: 60px;
 }
 .quality-list {
     list-style: none;
@@ -210,10 +225,9 @@ h2 {
 #page4{
     background-color: #f2f2f2;
 }
-#page4 img{
-    margin: 0 2em 1em 1em;
-    width: 100%;
-    max-width: 210px;
+#page4 .card{
+    margin: 0 2em 2em 0;
+    max-width: 300px;
 }
 #page4 svg{
     fill: #283035;
@@ -246,4 +260,15 @@ h2 {
 }
 #page6 svg{
     transform: rotate(180deg);
+}
+.form-control{
+    background-color: #000;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #CC9355;
+    padding: 0;
+}
+.form-control:focus{
+    background-color: #000;
+    border: none;
 }
