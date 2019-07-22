@@ -72,12 +72,12 @@ $(window).scroll(function(){
         $(menuList[9]).addClass("active");
         $(menuList[3]).addClass("active");
     }
-    if ($(window).scrollTop() >=  4*windowHeight -60){
+    if ($(window).scrollTop() >=  5*windowHeight -60){
         $(menuList).removeClass("active");
         $(menuList[10]).addClass("active");
         $(menuList[4]).addClass("active");
     }
-    if ($(window).scrollTop() >=  5*windowHeight -60){
+    if ($(window).scrollTop() >=  6*windowHeight -60){
         $(menuList).removeClass("active");
         $(menuList[11]).addClass("active");
         $(menuList[5]).addClass("active");
@@ -125,5 +125,8 @@ $(window).resize(function(){
         }, 500);
     }
 });
+//Change select option on card a
+$(".card a").click(function(){
+    $(".form-control option")
+})
 
-//trigger a function every time the page is scrolled
