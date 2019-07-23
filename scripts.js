@@ -1,5 +1,6 @@
 const qualityList =  jQuery.makeArray($(".quality-list li"));
-const menuList = jQuery.makeArray($(".desktopNav li, .mobileNav li"));
+const menuList = jQuery.makeArray($(".desktopNav li"));
+const productList = jQuery.makeArray($("#page4 .card-footer a.btn"));
 const windowHeight = $(window).height();
 
 $(document).ready(function() {
@@ -13,73 +14,65 @@ $(document).ready(function() {
     };
     if ($(window).scrollTop() < windowHeight){
         $(menuList).removeClass("active");
-        $(menuList[6]).addClass("active");
         $(menuList[0]).addClass("active");
     }
     if ($(window).scrollTop() >= windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[7]).addClass("active");
         $(menuList[1]).addClass("active");
+                $("#page2 .col-md-6").animate({
+            opacity: 1,
+        },750);
     }
     if ($(window).scrollTop() >=  2*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[8]).addClass("active");
         $(menuList[2]).addClass("active");
+        $("#page3 .col-md-6").animate({
+            right: 0,
+        }, 750);
     }
     if ($(window).scrollTop() >=  3*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[9]).addClass("active");
         $(menuList[3]).addClass("active");
     }
     if ($(window).scrollTop() >=  4*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[10]).addClass("active");
         $(menuList[4]).addClass("active");
     }
     if ($(window).scrollTop() >=  5*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[11]).addClass("active");
         $(menuList[5]).addClass("active");
     }
-    //animate svg when button is hovered
-    // $('.white-btn').hover(function() {
-    //     $('.page1 svg'){
-
-    //     }
-    // }
-    // )
-
 });
 // Pretty cool function for adaptative window height scrollview
 $(window).scroll(function(){
     if ($(window).scrollTop() < windowHeight){
         $(menuList).removeClass("active");
-        $(menuList[6]).addClass("active");
         $(menuList[0]).addClass("active");
     }
     if ($(window).scrollTop() >= windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[7]).addClass("active");
         $(menuList[1]).addClass("active");
+        $("#page2 .col-md-6").animate({
+            opacity: 1,
+        },750);
     }
     if ($(window).scrollTop() >=  2*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[8]).addClass("active");
         $(menuList[2]).addClass("active");
+        $("#page3 .col-md-6").animate({
+            right: 0,
+        }, 750);
     }
     if ($(window).scrollTop() >=  3*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[9]).addClass("active");
         $(menuList[3]).addClass("active");
     }
     if ($(window).scrollTop() >=  5*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[10]).addClass("active");
         $(menuList[4]).addClass("active");
     }
     if ($(window).scrollTop() >=  6*windowHeight -60){
         $(menuList).removeClass("active");
-        $(menuList[11]).addClass("active");
         $(menuList[5]).addClass("active");
     }
 });
@@ -125,8 +118,31 @@ $(window).resize(function(){
         }, 500);
     }
 });
-//Change select option on card a
-$(".card a").click(function(){
-    $(".form-control option")
-})
 
+//Change select option on card a
+$(productList).click(function(){
+    if (this == productList[0]){
+        $("select option[value=Drywall]").attr('selected', 'selected');
+    }
+    if (this == productList[1]){
+        $("select option[value=Divisórias]").attr('selected', 'selected');
+    }
+    if (this == productList[2]){
+        $("select option[value=Forros]").attr('selected', 'selected');
+    }
+    if (this == productList[3]){
+        $("select option[value=Persianas]").attr('selected', 'selected');
+    }
+    if (this == productList[4]){
+        $("select option[value=Portas]").attr('selected', 'selected');
+    }
+    if (this == productList[5]){
+        $("select option[value=Pisos]").attr('selected', 'selected');
+    }
+    if (this == productList[6]){
+        $("select option[value=Rodapés]").attr('selected', 'selected');
+    }
+    if (this == productList[7]){
+        $("select option[value=Painel Wall]").attr('selected', 'selected');
+    }
+});
